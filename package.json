@@ -1,0 +1,37 @@
+{
+  "name": "jamii-loan",
+  "version": "1.0.0",
+  "description": "A full-stack loan application system with M-PESA integration",
+  "main": "src/server.js",
+  "scripts": {
+    "install-all": "npm install && cd src && npm install && cd ../client && npm install",
+    "dev": "concurrently \"cd src && npm run dev\" \"cd client && npm run dev\"",
+    "build": "cd client && npm run build",
+    "start": "cd src && npm start",
+    "test": "cd src && npm test"
+  },
+  "keywords": [
+    "loan",
+    "mpesa",
+    "react",
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "author": "Jamii Loans Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/jamii-loan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/jamii-loan/issues"
+  },
+  "homepage": "https://github.com/yourusername/jamii-loan#readme",
+  "dependencies": {
+    "nodemailer": "^7.0.9"
+  }
+}
